@@ -1,0 +1,88 @@
+% preamble.tex
+
+%% packages
+% IEEE conference needed
+\usepackage{times}
+\usepackage{amssymb}
+\usepackage{amsmath}
+% \usepackage{mathptmx}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{multirow}
+% others
+\usepackage{nicefrac}
+\usepackage{cases}          % For multi-line equations with cases and numbers
+\usepackage{subcaption}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{flushend}
+\usepackage{balance}
+%% new commands
+% text
+\newcommand{\tn}[1]{\textnormal{#1}}
+\newcommand{\tb}[1]{\textbf{#1}}
+\newcommand{\ti}[1]{\textit{#1}}
+% matrices
+\newcommand{\mat}[0]{\begin{bmatrix}}
+\newcommand{\mate}[0]{\end{bmatrix}}
+% states
+\newcommand{\vx}{\mathbf{x}}
+\newcommand{\vp}{\mathbf{p}}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\va}{\mathbf{a}}
+\newcommand{\vb}{\mathbf{b}}
+\newcommand{\vz}{\mathbf{z}}
+\newcommand{\vd}{\mathbf{d}}
+\newcommand{\vu}{\mathbf{u}}
+\newcommand{\vf}{\mathbf{f}}
+\newcommand{\vg}{\mathbf{g}}
+\newcommand{\vh}{\mathbf{h}}
+\newcommand{\vs}{\mathbf{s}}
+\newcommand{\vq}{\mathbf{q}}
+\newcommand{\vy}{\mathbf{y}}
+% sets
+\newcommand{\W}{\mathcal{W}}        % Workspace
+\newcommand{\X}{\mathcal{X}}        % Configuration space
+\newcommand{\Obs}{\mathcal{O}}      % Obstacle regions
+\newcommand{\A}{\mathcal{A}}        % Robot occupied space
+\newcommand{\Sp}{\mathcal{S}}        % Geometric shape
+\newcommand{\U}{\mathcal{U}}        % Control space
+\newcommand{\Z}{\mathcal{Z}}        % General decision variables space
+\newcommand{\rN}{\mathcal{N}}       % Agent index sets
+\newcommand{\I}{\mathcal{I}}       % Agent index sets
+\newcommand{\K}{\mathcal{K}}       % Planning Horizon
+\newcommand{\oM}{\mathcal{M}}       % Dynamic obstacle index sets
+% numbers set
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+% operator
+\newcommand\norm[1]{\left\|#1\right\|}      % Big norm
+\newcommand\abs[1]{\left|#1\right|}         % Big abs, determinant
+\newcommand{\atwo}{\mathrm{atan2}}
+% statistics
+\newcommand{\hx}{\hat{\mathbf{x}}}
+\newcommand{\hp}{\hat{\mathbf{p}}}
+\newcommand{\hv}{\hat{\mathbf{v}}}
+\newcommand{\tp}{\tilde{\mathbf{p}}}
+\newcommand{\vsigma}{\mathbf{\sigma}}
+\newcommand{\vomega}{\mathbf{\omega}}
+\newcommand{\mN}{\mathcal{N}}
+\newcommand{\pr}{\textnormal{Pr}}
+\newcommand{\Gau}{\mathcal{N}}
+% symbols
+\newcommand{\eps}{\varepsilon}
+% other
+\newcommand{\ra}{\rightarrow}
+
+%% theorems
+\newtheorem{rmk}{\textbf{Remark}}
+\newtheorem{thm}{\textbf{Theorem}}
+\newtheorem{lem}{\textbf{Lemma}}
+\newtheorem{prop}{\textbf{Proposition}}
+\newtheorem{prob}{\textbf{Problem}}
+\newtheorem{defi}{\textbf{Definition}}
+\newtheorem{algo}{\textbf{Algorithm}}
+\newtheorem{cons}{\textbf{Constraint}}
