@@ -20,6 +20,7 @@
 \usepackage{algpseudocode}
 \usepackage{flushend}
 \usepackage{balance}
+
 %% new commands
 % text
 \newcommand{\tn}[1]{\textnormal{#1}}
@@ -28,61 +29,102 @@
 % matrices
 \newcommand{\mat}[0]{\begin{bmatrix}}
 \newcommand{\mate}[0]{\end{bmatrix}}
-% states
-\newcommand{\vx}{\mathbf{x}}
-\newcommand{\vp}{\mathbf{p}}
-\newcommand{\vv}{\mathbf{v}}
+% vectors
 \newcommand{\va}{\mathbf{a}}
 \newcommand{\vb}{\mathbf{b}}
-\newcommand{\vz}{\mathbf{z}}
+\newcommand{\vc}{\mathbf{c}}
 \newcommand{\vd}{\mathbf{d}}
-\newcommand{\vu}{\mathbf{u}}
+\newcommand{\ve}{\mathbf{e}}
 \newcommand{\vf}{\mathbf{f}}
 \newcommand{\vg}{\mathbf{g}}
 \newcommand{\vh}{\mathbf{h}}
-\newcommand{\vs}{\mathbf{s}}
+\newcommand{\vl}{\mathbf{l}}
+\newcommand{\vm}{\mathbf{m}}
+\newcommand{\vn}{\mathbf{n}}
+\newcommand{\vp}{\mathbf{p}}
 \newcommand{\vq}{\mathbf{q}}
+\newcommand{\vr}{\mathbf{r}}
+\newcommand{\vs}{\mathbf{s}}
+\newcommand{\vt}{\mathbf{t}}
+\newcommand{\vu}{\mathbf{u}}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\vw}{\mathbf{w}}
+\newcommand{\vx}{\mathbf{x}}
 \newcommand{\vy}{\mathbf{y}}
-% sets
-\newcommand{\W}{\mathcal{W}}        % Workspace
-\newcommand{\X}{\mathcal{X}}        % Configuration space
-\newcommand{\Obs}{\mathcal{O}}      % Obstacle regions
-\newcommand{\A}{\mathcal{A}}        % Robot occupied space
-\newcommand{\Sp}{\mathcal{S}}        % Geometric shape
-\newcommand{\U}{\mathcal{U}}        % Control space
-\newcommand{\Z}{\mathcal{Z}}        % General decision variables space
-\newcommand{\rN}{\mathcal{N}}       % Agent index sets
-\newcommand{\I}{\mathcal{I}}       % Agent index sets
-\newcommand{\K}{\mathcal{K}}       % Planning Horizon
-\newcommand{\oM}{\mathcal{M}}       % Dynamic obstacle index sets
+\newcommand{\vz}{\mathbf{z}}
+% mathcal
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cJ}{\mathcal{J}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cZ}{\mathcal{Z}}
 % numbers set
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\N}{\mathbb{N}}
-% operator
-\newcommand\norm[1]{\left\|#1\right\|}      % Big norm
-\newcommand\abs[1]{\left|#1\right|}         % Big abs, determinant
-\newcommand{\atwo}{\mathrm{atan2}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
 % statistics
 \newcommand{\hx}{\hat{\mathbf{x}}}
 \newcommand{\hp}{\hat{\mathbf{p}}}
 \newcommand{\hv}{\hat{\mathbf{v}}}
-\newcommand{\tp}{\tilde{\mathbf{p}}}
-\newcommand{\vsigma}{\mathbf{\sigma}}
-\newcommand{\vomega}{\mathbf{\omega}}
-\newcommand{\mN}{\mathcal{N}}
 \newcommand{\pr}{\textnormal{Pr}}
 \newcommand{\Gau}{\mathcal{N}}
-% symbols
+% operator
+\newcommand\norm[1]{\left\|#1\right\|}              % Big norm ||#||
+\newcommand\normtwo[1]{\left\|#1\right\|_2}         % Big norm ||#||_2
+\newcommand\norminf[1]{\left\|#1\right\|_{\infty}}  % Big norm ||#||
+\newcommand\abs[1]{\left|#1\right|}                 % Big abs, determinant
+\newcommand{\diag}{\mathop{\mathrm{diag}}}
+\newcommand{\rank}{\textbf{rank}}
+\newcommand{\atwo}{\mathrm{atan2}}
+% special symbols
 \newcommand{\eps}{\varepsilon}
-% other
+% arrow
 \newcommand{\ra}{\rightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\lra}{\leftrightarrow}
+\newcommand{\Lra}{\Leftrightarrow}
+% others
+\newcommand{\zero}{\mathbf{0}}
+\newcommand{\one}{\mathbf{1}}
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{TODO: #1}}}
 
 %% theorems
-\newtheorem{rmk}{\textbf{Remark}}
-\newtheorem{thm}{\textbf{Theorem}}
-\newtheorem{lem}{\textbf{Lemma}}
-\newtheorem{prop}{\textbf{Proposition}}
-\newtheorem{prob}{\textbf{Problem}}
-\newtheorem{defi}{\textbf{Definition}}
-\newtheorem{algo}{\textbf{Algorithm}}
-\newtheorem{cons}{\textbf{Constraint}}
+\newtheorem{theorem}{\textbf{Theorem}}
+\newtheorem{lemma}{\textbf{Lemma}}
+\newtheorem{remark}{\textbf{Remark}}
+\newtheorem{definition}{\textbf{Definition}}
+\newtheorem{assumption}{\textbf{Assumption}}
+\newtheorem{problem}{\textbf{Problem}}
+\newtheorem{constraint}{\textbf{Constraint}}
+\newtheorem{proposition}{\textbf{Proposition}}
+
+
+
+
